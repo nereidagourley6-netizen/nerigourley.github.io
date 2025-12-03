@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chef Scott's Contact Page</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+		<header class="main-header">
+		 <div id="header-container">
+		 <h1> Scott Gourley</h1>
+        <img src="images/chef_logo.png" alt="Logo" class="logo" />  
+		
+		<nav class="horizontal" id="topLinks">
+        <a id="navicon" href="#"><img src="navicon.png" alt="" /></a>   
+
+	<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+          
+
+        <li><a href="services.html">Services</a>
+            <ul>
+                <li><a href="banquetparties.html">Banquet Parties</a></li>
+                <li><a href="privatedinner.html">Private Dinner</a></li>
+       </ul>
+
+        <li><a href="menus.html">Menus</a>
+            <ul>
+                <li><a href="breakfast menu.html">Breakfast Menu</a></li>
+                <li><a href="lunch menu.html">Lunch Menu</a></li>
+                <li><a href="dinner menu.html">Dinner Menu</a></li>
+            </ul>
+        </li>
+
+        <li><a href="portfolio.html">Portfolio</a>
+            
+        </li>
+
+        <li><a href="events.html">Events</a>
+            <ul>
+                <li><a href="hosteddinners.html">Hosted Dinners</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+</header>
+
+
+<section class="hero">
+	<div class="hero-content">
+	
+	<img src="images/hero_banner.jpg" alt="Logo" class="hero_banner" /> 
+	<p>     </p>
+	</div>
+	</section>
+
+     <div class="row">
+            <section class="col">
+                
+                <h3>Contact Us</h3>
+                <p>Required information is marked with an asterisk (*).</p>
+                
+            
+            <!-- Mailto Form -->
+      <form action="mailto:youremail@yourmail.com" method="post" enctype="text/plain">
+        <label for="myFName">* First Name:</label>
+        <input type="text" id="myFName" name="First_Name" required>
+
+        <label for="myLName">* Last Name:</label>
+        <input type="text" id="myLName" name="Last_Name" required>
+
+        <label for="myEmail">* E-mail:</label>
+        <input type="email" id="myEmail" name="Email" required>
+		
+		<label for="myEmail">* Address:</label>
+        <input type="text" id="myAdress" name="Adress" required>
+		
+		<label for="myEmail">* City and State:</label>
+        <input type="text" id="myCity&State" name="City and State" required>
+		
+		<label for="myEmail">* Zipcode:</label>
+        <input type="text" id="myZipcode" name="Zipcode" required>
+		
+		
+        <label for="myPhone">Phone:</label>
+        <input type="tel" id="myPhone" name="Phone">
+
+        <label for="myDate">Arrival Date:</label>
+        <input type="date" id="myDate" name="Arrival_Date">
+
+        <label for="myNights">Nights:</label>
+        <input type="number" id="myNights" name="Nights" min="1" max="14">
+
+        <p>For faster service, please submit your identification three days before your arrival.</p>
+        <ul>
+          <li>Birth Certificate</li>
+          <li>Driver’s License</li>
+          <li>State ID</li>
+          <li>Employment Identification</li>
+          <li>Government-issued Passport</li>
+        </ul>
+
+        <p>Select color:</p>
+        <label class="radio-label"><input type="radio" name="Color" value="Blue" checked> Blue</label>
+        <label class="radio-label"><input type="radio" name="Color" value="Red"> Red</label>
+
+        <fieldset>
+          <legend>Select Gender</legend>
+          <label for="myList">Select list:</label>
+          <select id="myList" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            <option value="Both">Both</option>
+          </select>
+        </fieldset>
+
+        <label for="myComments">* Comments:</label>
+        <textarea id="myComments" name="Comments" rows="10" cols="50" required></textarea>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+		  
+            </section>
+                 </div>
+                    </main> 
+
+    <!-- FOOTER -->
+    <footer class="">
+        <p>&copy; 2025 Chef Scott | Private Chef in Chicago</p>
+    </footer>
+	
+</main>
+</body>
+</html>
