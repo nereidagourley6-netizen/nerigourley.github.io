@@ -4,34 +4,25 @@
 <head>
 	<title>Chef Scott's Menu Page</title>
 	<meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
+   
+	<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
 </head>
+
 <body>
+<div id="wrapper">
 
-
-		<header class="main-header">
-		 <div id="header-container">
-		 <h1> Scott Gourley</h1>
+		<header class="site-header">
+		 <div class="header-container">
+		 <h1>Chef Scott Gourley</h1>
         <img src="chef_logo.png" alt="Logo" class="logo" />  
-		
-		<nav class="horizontal" id="topLinks">
-        <a id="navicon" href="#"><img src="navicon.png" alt="" /></a>   
 
-	<nav class="main-nav">
-    <ul>
-        <li><a href="index.html">Home</a>
-          </li>
-           
+	<nav class="site-nav">
+		<ul>
+        <li><a href="index.html">Home</a> </li>
 
-        <li><a href="services.html">Services</a>
-            <ul>
-                <li><a href="banquetparties.html">Banquet Parties</a></li>
-                <li><a href="privatedinner.html">Private Dinner</a></li>
-                
-            </ul>
-        </li>
+        <li><a href="recipes.html">Recipes</a></li>
 
         <li><a href="menus.html">Menus</a>
             <ul>
@@ -40,36 +31,37 @@
                 <li><a href="dinnermenu.html">Dinner Menu</a></li>
             </ul>
         </li>
-
         <li><a href="portfolio.html">Portfolio</a>
-            </li>
-  
-
-        <li><a href="events.html">Events</a>
-            <ul>
-                <li><a href="hosteddinners.html">Hosted Dinners</a></li>
-            </ul>
         </li>
-
+        <li><a href="catering.html">Catering</a>
+        </li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
 </header>
 
-<section class="hero">
+	<section class="hero">
 	<div class="hero-content">
-	
-	<img src="charcuterie.jpg" alt="Logo" class="hero_banner" /> 
-	<p>     </p>
+	<img src="charcuterie.jpg" alt="Logo" class="hero_banner" > 
 	</div>
 	</section>
 
- <!-- RECIPE GRID -->
+ <main>
+	<section class="biography">
+            <h3>Crafting the Perfect Menu: Seasonal and Flavorful</h3>
+			<p>Chef Scott designs a catering menu by first leveraging the best ingredients of the current
+			season, ensuring peak freshness and vibrant flavor profiles—a fundamental practice that distinguishes 
+			gourmet cuisine. This initial focus is then paired with an understanding of client preferences and event 
+			context, allowing the chef to build plates that offer both visual appeal and complex, balanced tastes.
+			For instance, in spring, the menu might feature delicate asparagus and ramps; in fall, it shifts to rich 
+			squash and root vegetables, each prepared using techniques—like controlled searing or slow braising—that 
+			maximize the inherent flavor of the produce. The final result is a harmonious, delicious, and memorable 
+			dining experience that showcases the chef's expertise and commitment to quality, making this a culinary 
+			service you will definitely want to book. </p>
+	</section>
  
- <h2> Top Menu Items</h2>
- 
-    <main class="recipe-grid">
+    <section class="recipe-grid">
         <div class="recipe-card">
             <img src="avocado_biscuit.jpg" alt="Breakfast dish avocado biscuit">
             <h3>Avocado Biscuit</h3>
@@ -90,19 +82,51 @@
             <h3>Carrot Cake Mousse</h3>
             <p class="category">Dessert</p>
         </div>
-        <!-- Add more recipe cards as needed -->
-    </main>
+			</section>
+			
+      <section class="biography">
+            <h3>The Art of Pairing: Elevating Your Catering Experience</h3>
+			<p>Chef Scott takes the catering menu beyond just exceptional food by integrating expert food 
+			and cocktail pairing as a standard, refined component of the package. This is not just about serving wine; 
+			it is a thoughtful process where the chef analyzes the core flavors, textures, and aromatic compounds of
+			each dish—from the acidity of the vinaigrette to the richness of the main protein glaze—and matches them 
+			with carefully selected cocktail beverages. This seamless inclusion of expert beverage curation ensures your 
+			catered event is a truly holistic and unforgettable gastronomic journey.</p>
+	</section>
+	
+	<section class="recipe-grid">
+        <div class="recipe-card">
+            <img src="four-cocktails.jpg" alt="four cocktails">
+            <h3>Martinis</h3>
+            <p class="category">Signature Cocktails</p>
+        </div>
+        <div class="recipe-card">
+            <img src="oldfashions.jpg" alt="two old fashion cocktails">
+            <h3>Old Fashion Cocktails</h3>
+            <p class="category">Spirit Cocktails</p>
+        </div>
+        <div class="recipe-card">
+            <img src="breakfast-cocktails.jpg" alt="Breakfast cocktails bloody mary and mimosa">
+            <h3>Mimosa and Bloody Mary</h3>
+            <p class="category">Breakfast Cocktails</p>
+        </div>
+        <div class="recipe-card">
+            <img src="beverage_banner.jpg" alt="glass bottles of juices">
+            <h3>Seasonal Juices</h3>
+            <p class="category">Beverages</p>
+        </div>
+</section>
+</main>
 
     <!-- FOOTER -->
-    <footer class="">
+   <footer class="">
         <p>&copy; 2025 Chef Scott | Private Chef in Chicago</p>
-    </footer>
-	
-</main>
+   </footer>
+ 
+
+</div>
 </body>
+
 </html>
-
-
-
 
 
