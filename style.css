@@ -12,37 +12,47 @@ GLOBAL STYLES
 
 body {
     font-family: 'Lato', sans-serif;
-    background: #f7f7f7;
+   
     color: #222;
     line-height: 1.6;
+	background-color: #8B0000;
 	
+}
+
+#wrapper {
+    max-width: auto;
+	width: 95%;
+	margin: auto;
+	background: #F0F8FF;
 }
 
 /* -----------------------------
 HEADER AND LOGO
 ----------------------------- */
-.main-header {
-    background: #6b0009;     /* this is where Chef's name and logo is located*/
-    color: #fff;
-    padding: 5px 0;
-	position: relative;
-	z-index: 1000;
-	
-}
-
-#header-container {
+.header-container {
     width: 95%;
+	max-width: 1200px;
 	gap: 15px;
     display: flex;
     align-items: center;
-	justify-content: space-between; /* logo left, nav right */
-    padding: 10px;
-    margin: 0 auto;
+	justify-content: space-between; 
+    padding: 10px 0;
+   	margin: 0 auto;
 	
 }
 
-.main-header h1 {
-    font-family: 'Merriweather', serif;
+.site-header {
+    background: #6b0009;     /* this is where Chef's name*/
+    color: #fff;
+	position: relative;
+	z-index: 1000;
+	margin: 5px auto;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.site-header h1 {
+    font-family: 'Sofia', serif;
     font-size: 2rem;
 	padding: 1%;
 }
@@ -50,29 +60,35 @@ HEADER AND LOGO
 .logo {
     height: 70px;
     width: auto;
-	padding-left: 10%;
+	padding-left: 15%;
+	border-radius: 25px;
 	
 }
 
+.contact-me h1{
+	 font-family: 'Fredoka', serif;
+	 font-size: 4rem;
+	 text-shadow: 2px 2px 4px #000000;
+}
+
 /* -----------------------------
-MAIN NAVIGATION
+Site NAVIGATION
 ----------------------------- */
-.main-nav ul {
+.site-nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
 	margin: 0;
 	padding: 0;
 	justify-content: flex-end; 
-	
 }
 
-.main-nav li {
+.site-nav li {
     position: relative;
 	
 }
 
-.main-nav > ul > li > a {
+.site-nav > ul > li > a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -82,14 +98,14 @@ MAIN NAVIGATION
 }
 
 /* Hover color */
-.main-nav > ul > li > a:hover {
+.site-nav > ul > li > a:hover {
     color: #ffd7b0;
 }
 
 /* -----------------------------
 DROPDOWN MENUS
 ----------------------------- */
-.main-nav ul ul {
+.site-nav ul ul {
     list-style: none;
     position: absolute;
     top: 100%;      /* changed this to bring submenu closer to nav */
@@ -102,11 +118,11 @@ DROPDOWN MENUS
 }
 
 /* Show on hover */
-.main-nav li:hover > ul {
+.site-nav li:hover > ul {
     display: block;
 }
 
-.main-nav ul ul li a {
+.site-nav ul ul li a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -115,117 +131,267 @@ DROPDOWN MENUS
 }
 
 /* Hover for dropdown */
-.main-nav ul ul li a:hover {
+.site-nav ul ul li a:hover {
     background: rgba(255,255,255,0.15);
 }
 
 /* ---------------
 HERO BANNER ------ */
 .hero {
-    width: 100%;
-    height: 50vh;     
+    padding-top: 0;
+	width: 100%;
+    height: 32vh;     
     position: relative;
     overflow: hidden;
-    background: #D2B48C;
-	z-index: auto; }
+	z-index: auto;
 	
-
+}
+	
 .hero-content {
-    width: 100%;
-    height: 100%;
+    position: relative;
 }
 
-.hero_banner {  
+.hero_banner { 
     width: 100%;
-    height: 90%;
-    object-fit: cover;
+    max-height: 32vh;
+    object-fit: cover;	
 }
-
 
 .hero-content p {
-    position: absolute;
     bottom: 20px;
     left: 50px;
     color: black;
     font-size: 2rem;
-    font-family: 'Merriweather', serif;
+    font-family: 'Sofia', serif;
 }
 
 /* -----------------------------
-MAIN CONTENT WRAPPER
+Main Heading and main content
 ----------------------------- */
-.content {
-    display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-    flex-wrap: wrap;  
-    gap: 50px;
-    width: 90%;
-    max-width: 90%;
-    margin: 40px auto;
-	background-color: #f7f7f7;
-}
-
 .main-heading {
+	max-width: 1300px;
 	font-family: 'Playfair Display', serif;
-	font-size: 1.6rem;
-	line-height: 1.4;
+	font-size: 1.7rem;
+	letter-spacing: 1px;
 	color:	#2F4F4F;
-	margin: 40px 80px;	
+	margin: auto;	
 	font-style: italic;
 	padding: 10px 0;
+	
 }
 
-.right-column, .left-column {
-    width: 90%;
-    max-width: 550px;
-    margin: 30px auto;
-}
-
-.chef_photo {
-    width: 100%;
+.biography {
+    width: 70%;
+    max-width: 900px;
+    margin-left: 25%; 
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 20px;
+    background: #f9f5f0;    
     border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+	
+}
+
+.biography h3 {
+    font-family: 'Abril Fatface', serif; 
+    font-size: 2rem;
+    color: #6b0009;               
+    margin: 0 auto 20px auto;
+    text-align: center;          
+    letter-spacing: 1px;
+    border-bottom: 2px solid #D2B48C;  
+    display: block;            
+    padding-bottom: 5px;
+
+}
+
+.biography p {
+    font-family: Calibri, serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;          
+    text-align: justify;          
+}
+
+.chef-intro {
+    text-align: center;
+    margin: 40px auto;
+    width: 100%;
+}
+
+.chef-intro .action {
+    width: 550px;        
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.chef-title {
+    margin-top: 12px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #6b0009;
+    font-family: 'Sofia', serif;
+}
+
+
+.main-info {
+    max-width: 1300px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+.info-container {
+    display: grid;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto ;
+    padding: 20px; 
+		}
+
+.text-content p {
+    color:	#2F4F4F;
+	font-family: Calibri;
+	max-width: 100%;
+    margin: 0 auto;	
+	font-size: 1.2rem;
+	
+}
+
+.home_photo {
+	width: 600px;
+    max-width: 100%;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
     box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 	
 }
 
-.left-column h2 {
-    margin-bottom: 15px;
-}
-
-.left-column p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-}
-
 .section-divider {
-    width: 1170px;           
+    width: 1200px;           
     height: 2px;           
     background-color: #c6a756;
-        
-}
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 800px;  
-    margin: 20px auto; 
-   
+	 margin: 50px auto;   
 }
 
-.video-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+/* Styles for Recipes Page */
+.recipe-section {
+	display: grid;
+	gap; 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
 }
 
-/* TABLE STYLES */
+.recipe-title {
+    font-family: Calibri, serif;
+    font-size: 2.5rem;
+    color: #6b0009;
+    margin-bottom: 10px;
+}
+
+.recipe-intro {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.recipe-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff7f2;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px; 
+    animation: popIn 0.5s ease;
+}
+
+.recipe-table caption {
+	
+    background: #6b0009;
+    color: white;
+    padding: 12px;
+    font-size: 1.5rem;
+    font-family: Calibri, serif;
+    letter-spacing: 0.5px;
+}
+
+.recipe-table th {
+       padding: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #6b0009;
+}
+
+.recipe-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+}
+
+.recipe-table tr:nth-child(odd) {
+    background: #fff2e6;
+}
+
+.steps-table td:first-child {
+    font-weight: bold;
+    color: #6b0009;
+	
+}
+
+/* Animations */
+@keyframes popIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* -----------------------------
+Figure caption
+------------------------------ */
+
+figcaption {
+    color: #555;
+    margin-bottom: 8px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+caption {
+	font-weight: bold;
+	font-family: 'Abril Fatface', serif; 
+    font-size: 2rem;
+    color: #6b0009;
+	margin-bottom: 20px;
+}
+
+/* Table styles */
 table {
-  font-family: Arial, sans-serif;
+  font-family: Calibri, sans-serif;
+  font-size: 1.3rem;
   border-collapse: collapse;
   width: 80%;
   background-color: #fff;
   margin: 20px auto;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 80px;
 }
 
 td, th {
@@ -252,7 +418,7 @@ tr:nth-child(even) {
     background: #a03131;
 }
 
-/* Images & sliding */
+/* Images & sliding in the Breakfast, Lunch and Dinner pages */
 .image-container {
     display: flex;
     gap: 2%;
@@ -299,8 +465,7 @@ tr:nth-child(even) {
     animation-duration: 10s;
 }
 
-/* @keyframes--> used to define animations by specifying 
-how an element's styles should change atspecific points during theanimation sequence.*/
+/* @keyframes--> */
 @keyframes slideInLeft { 
     from { transform: translateX(-100%);} 
     to { transform: translateX(0); } 
@@ -315,28 +480,30 @@ how an element's styles should change atspecific points during theanimation sequ
     from { background-color:#cfe0e8; } 
     to { background-color:#4b79a1; } 
 }
+
 /* RECIPE GRID */
 .recipe-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    max-width: 1200px;
-    margin: 50px auto;
+    max-width: 1210px;
+    margin: 20px auto;
     padding: 10px 20px;
+	margin-bottom: 80px;
 	
 }
 
 .recipe-card {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 
 .recipe-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .recipe-card img {
@@ -351,9 +518,11 @@ how an element's styles should change atspecific points during theanimation sequ
 }
 
 .recipe-card .category {
-    font-size: 0.9rem;
-    color: #888;
+    font-size: 1rem;
+    color: black;
     margin-bottom: 15px;
+	font-style: italic;
+	font-family: Calibri;
 }
 
 /* Video Section */
@@ -449,6 +618,7 @@ how an element's styles should change atspecific points during theanimation sequ
   padding: 0 10px;
 }
 
+
 /* Align labels and inputs for readability */
 
 label {
@@ -484,7 +654,7 @@ select:focus {
 /* ---------- Form Buttons ---------- */
 input[type="submit"],
 input[type="reset"] {
-  background-color: #004d40;;      /* base button color */
+  background-color: #DAA520;;      /* base button color */
   color: white;                   /* text color */
   border: none;
   padding: 0.8em 1.5em;
@@ -492,30 +662,13 @@ input[type="reset"] {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-right: 0.5em;            /* spacing between buttons */
+  margin-right: 0.5em;           
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background-color: #3b4d3b;      /* hover color */
-  transform: scale(1.05);         /* slight grow effect */
-}
-
-
-/* ---------- Radio & Checkbox Alignment ---------- */
-label input[type="radio"],
-label input[type="checkbox"] {
-  margin-right: 0.5em; /* space between button and text */
-  vertical-align: middle;
-}
-
-label.radio-label,
-label.checkbox-label {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 1em; /* spacing between options */
-  margin-bottom: 1em;
-  cursor: pointer;
+  background-color: khaki;      /* hover color */
+  transform: scale(1.05);      
 }
 
 /* File input styling */
@@ -524,10 +677,10 @@ input[type="file"] {
   padding: 5px;
   border-radius: 5px;
   background-color: #fff;
+  
 }
 
 form {
-  
   border-radius: 10px;         
   padding: 20px 30px;           
   background-color: #f6f8f7;     
@@ -553,8 +706,6 @@ form {
   align-items: center;
 
 }
-
-
 
 /* Event Highlights */
 .content-wrapper {
@@ -639,49 +790,175 @@ p {
 }
 
 /* RESPONSIVE */
+/* ------------------------------------
+MOBILE VIEW (768px and under)
+------------------------------------ */
 @media (max-width: 768px) {
-    .hero-content h2 {
-        font-size: 2rem;
+
+    /* Wrapper */
+ #wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    .hero-content p {
-        font-size: 1rem;
-    }
-	 .header-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .overlay h3 {
-    font-size: 1.2rem;
-  }
-  .overlay p {
-    font-size: 0.9rem;
-  }
-}
-/* -----------------------------
-RESPONSIVE FOR MOBILE
------------------------------ */
-@media (max-width: 900px) {
-    .content {
+/* Header */
+.header-container {
         flex-direction: column;
-    }
-    
-    .right-column {
-        justify-content: flex-start;
+        gap: 8px;
+        text-align: center;
     }
 
-    .three-images img {
+.site-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .logo {
+        height: 60px;
+        padding-left: 0;
+    }
+
+    /* NAV */
+.site-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px 0;
+        background-color: #6b0009;
+        width: 100%;
+        text-align: center;
+    }
+
+ .site-nav ul ul {
+        position: static;
+        width: 100%;
+    }
+
+    .site-nav ul ul li a {
+        padding: 8px;
+        text-align: center;
+    }
+
+    /* Hero section */
+.hero {
+        height: 22vh;
+        padding-top: 0;
+        margin-top: -5px;
+    }
+
+.hero_banner {
+        max-height: 22vh;
+        object-fit: cover;
+    }
+
+ .hero-content p {
+        font-size: 1.3rem;
+        bottom: 10px;
+        left: 20px;
+    }
+
+    /* BIO */
+.biography {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .biography h3 {
+        font-size: 1.6rem;
+    }
+
+    .biography p {
+        font-size: 1.1rem;
+    }
+
+    /* MAIN */
+.main-heading {
+        padding: 0 15px;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    /* CHef into */
+.chef-intro .action {
+        width: 100%;
         max-width: 100%;
     }
-}
 
+    .chef-title {
+        font-size: 2.2rem;
+    }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
+    /* Home text */
+    .info-container {
+        display: block;
+        text-align: center;
     }
-    .video-card iframe {
-        height: 180px;
+.text-content p {
+        font-size: 1.1rem;
+        padding: 0 10px;
     }
-}
+ .home_photo {
+        width: 100%;
+    }
+
+/* Recipe grid */
+.recipe-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+ .recipe-card img {
+        height: 160px;
+    }
+
+/* Image slide */
+.image-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+.animated-img {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Video */
+    .video-section {
+        grid-template-columns: 1fr;
+    }
+
+    .video-card video {
+        height: 240px;
+    }
+
+    /* Portfolio*/
+.portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+ /* EVent cards*/
+.events-highlights {
+        flex-direction: column;
+    }
+
+    .event-card {
+        flex: 1 1 100%;
+    }
+
+/* Calendar */
+    .calendar th, .calendar td {
+    font-size: 0.9rem;
+        padding: 6px;
+    }
+
+ /* Contact us */
+ form {
+        width: 90%;
+        padding: 20px;
+    }
+
+input,
+    textarea,
+    select {
+        width: 100%;
+        max-width: 100%;
