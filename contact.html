@@ -6,29 +6,25 @@
 	<meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Sekuya&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
-		<header class="main-header">
-		 <div id="header-container">
-		 <h1> Scott Gourley</h1>
+<div id="wrapper">
+		<header class="site-header">
+		 <div class="header-container">
+		 <h1>Chef Scott Gourley</h1>
         <img src="chef_logo.png" alt="Logo" class="logo" />  
-		
-		<nav class="horizontal" id="topLinks">
-        <a id="navicon" href="#"><img src="navicon.png" alt="" /></a>   
+	  
 
-	<nav class="main-nav">
+	<nav class="site-nav">
     <ul>
         <li><a href="index.html">Home</a></li>
           
 
-        <li><a href="services.html">Services</a>
-            <ul>
-                <li><a href="banquetparties.html">Banquet Parties</a></li>
-                <li><a href="privatedinner.html">Private Dinner</a></li>
-       </ul>
+        <li><a href="recipes.html">Recipes</a>
+        </li>
 
         <li><a href="menus.html">Menus</a>
             <ul>
@@ -39,15 +35,14 @@
         </li>
 
         <li><a href="portfolio.html">Portfolio</a>
+            
         </li>
 
-        <li><a href="events.html">Events</a>
-            <ul>
-                <li><a href="hosteddinners.html">Hosted Dinners</a></li>
-            </ul>
+        <li><a href="catering.html">Catering</a>
         </li>
 
         <li><a href="contact.html">Contact</a></li>
+    </ul>
 </nav>
 
 </header>
@@ -56,15 +51,17 @@
 <section class="hero">
 	<div class="hero-content">
 	
-	<img src="hero_banner.jpg" alt="Logo" class="hero_banner" /> 
+	<img src="lunch_banner.jpg" alt="Logo" class="hero_banner" /> 
 	<p>     </p>
 	</div>
 	</section>
 
      <div class="row">
             <section class="col">
-                
-                <h3>Contact Us</h3>
+
+                <header class="contact-me">
+                <h1>CONTACT ME <span style='font-size:100px;'>&#127860;</span><h1>
+				 <h3>I'll be glad to answer your questions</h3>
                 <p>Required information is marked with an asterisk (*).</p>
                 
             
@@ -79,9 +76,6 @@
         <label for="myEmail">* E-mail:</label>
         <input type="email" id="myEmail" name="Email" required>
 		
-		<label for="myEmail">* Address:</label>
-        <input type="text" id="myAdress" name="Adress" required>
-		
 		<label for="myEmail">* City and State:</label>
         <input type="text" id="myCity&State" name="City and State" required>
 		
@@ -92,36 +86,20 @@
         <label for="myPhone">Phone:</label>
         <input type="tel" id="myPhone" name="Phone">
 
-        <label for="myDate">Arrival Date:</label>
+        <label for="myDate">Tentative Catering Date:</label>
         <input type="date" id="myDate" name="Arrival_Date">
 
-        <label for="myNights">Nights:</label>
+        <label for="myNights">Service Time </label>
         <input type="number" id="myNights" name="Nights" min="1" max="14">
 
-        <p>For faster service, please submit your identification three days before your arrival.</p>
+        <p>For faster service, please submit your three dates you are flexible with booking.</p>
         <ul>
-          <li>Birth Certificate</li>
-          <li>Driver’s License</li>
-          <li>State ID</li>
-          <li>Employment Identification</li>
-          <li>Government-issued Passport</li>
+         <li>1st Date and Time & Number of Guests</li>
+          <li>2nd Date and Time & Number of Guests</li>
+          <li>3rd Date and Time & Number of Guests</li>
+          
         </ul>
-
-        <p>Select color:</p>
-        <label class="radio-label"><input type="radio" name="Color" value="Blue" checked> Blue</label>
-        <label class="radio-label"><input type="radio" name="Color" value="Red"> Red</label>
-
-        <fieldset>
-          <legend>Select Gender</legend>
-          <label for="myList">Select list:</label>
-          <select id="myList" name="Gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-            <option value="Both">Both</option>
-          </select>
-        </fieldset>
-
+<br>
         <label for="myComments">* Comments:</label>
         <textarea id="myComments" name="Comments" rows="10" cols="50" required></textarea>
 
@@ -141,6 +119,3 @@
 </main>
 </body>
 </html>
-
-
-
