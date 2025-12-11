@@ -12,11 +12,9 @@ GLOBAL STYLES
 
 body {
     font-family: 'Lato', sans-serif;
-   
     color: #222;
     line-height: 1.6;
 	background-color: #6b0009;
-	
 }
 
 #wrapper {
@@ -962,4 +960,5 @@ input,
     select {
         width: 100%;
         max-width: 100%;
+
 
